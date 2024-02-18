@@ -15,7 +15,7 @@ Bandrer is a minimalistic JavaScript bundler that bundles all JavaScript files i
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/bandrer.git
+   git clone https://github.com/andreburg/bandrer.git
    cd bandrer
 
 2. Install Dependencies
