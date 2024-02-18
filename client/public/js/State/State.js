@@ -1,4 +1,4 @@
-export default class State {
+export class State {
     constructor(params) {
         if (State.instance) {
             if (params.listener) State.instance.listeners = [...State.instance.listeners, params.listener];

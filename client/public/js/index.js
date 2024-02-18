@@ -1,9 +1,9 @@
-import Route from "./Routes/Route.js";
-import Router from "./Routes/Router.js";
+import {Route} from "./Routes/Route.js";
+import {Router} from "./Routes/Router.js";
 
-import CalculatorPage from "./Pages/CalculatorPage/CalculatorPage.js";
-import HistoryPage from "./Pages/HistoryPage/HistoryPage.js";
-import State from "./State/State.js";
+import {CalculatorPage} from "./Pages/CalculatorPage/CalculatorPage.js";
+import {HistoryPage} from "./Pages/HistoryPage/HistoryPage.js";
+import {State} from "./State/State.js";
 
 let globalState = new State({});
 let app = document.querySelector("#app");
@@ -32,6 +32,5 @@ const route = () => {
     removeAllChildren(app);
     app.appendChild(route.comp.getHtml());
     route.comp.sideEffects();
-    console.log(app.attributes);
     app.classList.value = `darkmode-${globalState.state.page.darkmode}`
 }

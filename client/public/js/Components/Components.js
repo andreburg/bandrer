@@ -1,4 +1,4 @@
-export default class Components {
+export class Components {
     constructor() {
         this.comps = [];
     }

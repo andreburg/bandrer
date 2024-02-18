@@ -4,7 +4,12 @@ const config = {
   bundleDir: "./dist",
   html: "client/index.html",
   port: 8888,
-  serves: ["client/public/css"],
+  serves: [
+    {
+      dir: "/client/public/css",
+      at: "/css",
+    },
+  ],
 };
 
 module.exports = {

@@ -1,9 +1,7 @@
-import Component, { buildComponent } from "../Component.js";
-import State from "../../State/State.js";
+import { Component, buildComponent } from "../Component.js";
+import {State} from "../../State/State.js";
 
-console.log(typeof Component);
-
-export default class CalculatorButton extends Component {
+export class CalculatorButton extends Component {
   constructor(params) {
     super(params);
     this.text = params.text;

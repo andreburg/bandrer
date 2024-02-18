@@ -1,6 +1,6 @@
-import Components from "./Components.js";
+import {Components} from "./Components.js";
 
-export default class Component {
+export class Component {
     #RENDER;
 
     constructor(params) {
@@ -30,9 +30,7 @@ export const buildComponent = (componentType, attributes, components, innerText)
             htmlComponent.setAttribute(attributeKey, attributeValue);
         }
     }
-    console.log(components);
     for (let i = 0; i < components.length; i++) {
-        console.log(components[i]);
         htmlComponent.appendChild(components[i]);
     }
 

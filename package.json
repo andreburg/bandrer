@@ -2,7 +2,7 @@
   "name": "bandrer",
   "version": "1.0.0",
   "description": "Creating a small bundler in order to understand the inner workings of modern bundlers.",
-  "main": "bundle.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
